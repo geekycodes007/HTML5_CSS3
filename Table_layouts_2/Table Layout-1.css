@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(231, 218, 201);
+}
+th {
+  padding: 10px;
+  background-color: rgb(221, 189, 108);
+  color: aliceblue;
+}
+td {
+  padding: 10px;
+  background-color: beige;
+}
+@media (max-width: 500px) {
+  th {
+    display: none;
+  }
+  td {
+    display: block;
+    text-align: right;
+  }
+  td:nth-child(1)::before {
+    content: "Name:";
+  }
+  td:nth-child(2)::before {
+    content: "Age:";
+  }
+  td:nth-child(3)::before {
+    content: "Company:";
+  }
+  td:nth-child(4)::before {
+    content: "Role:";
+  }
+  td::before {
+    float: left;
+    margin-right: 20px;
+    font-weight: 800;
+  }
+}

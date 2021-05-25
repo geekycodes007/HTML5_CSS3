@@ -1,0 +1,80 @@
+*{
+  padding: 0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+body{
+
+  background-color:#FFFBEB;
+}
+.icon{
+  color: #edf2f4;
+  position: absolute;
+  top: 5px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.form{
+  background-color: #4361ee;
+  width: 380px;
+  height: 340px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 20px 12px;
+  text-align: center;
+  border-radius: 5px;
+}
+ .form h2{
+   text-align: center;
+   color:#ffd166;
+   font-size: 1.6rem;
+   margin-bottom: 10px;
+ }
+.inputs{
+  color:#edf2f4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 8px;
+  line-height: 1.3;
+}
+.inputs input{
+  background-color:#edf2f4;
+  color: #495057;
+  font-size: 14px;
+  width: 340px;
+  height: 2rem;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+.inputs input:focus{
+ box-shadow: inset 0 0 15px #ffd166;
+ transition: 0.3s ease-in;
+}
+.text a{
+  color: #ffd166;
+  text-align: left;
+}
+.button button{
+  font-size: 1rem;
+  color: #22223b;
+  background-color:#f8f9fa;
+  width: 340px;
+  height: 2rem;
+  border-radius: 2px;
+  margin-top: 25px;
+  outline: none;
+  border: none;
+}
+button:hover{
+  cursor: pointer;
+  color: #22223b;
+  background-color: #ffd166;
+  transition: 0.2s ease-in-out;
+}

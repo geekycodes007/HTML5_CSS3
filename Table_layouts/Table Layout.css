@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Toledo";
+}
+table {
+  margin: 0 auto;
+  text-align: center;
+}
+table,
+th,
+td {
+  text-align: center;
+  border: 1px solid rgba(16, 24, 32, 0.102);
+  border-collapse: collapse;
+  padding: 25px;
+}
+th {
+  background-color: #f2aa4cff;
+  color: rgb(45, 41, 38);
+}
+tr:nth-child(odd) {
+  background-color: #c7d3d4ff;
+}
+td:first-child {
+  background-color: #f2aa4cff;
+}
+@media (max-width: 500px) {
+  .t1 th {
+    display: none;
+  }
+  .t1 {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .t1 td {
+    display: block;
+    width: 100%;
+    text-align: right;
+  }
+  .t1 td::before {
+    content: attr(data-label) ":";
+    float: left;
+    margin-right: 10px;
+  }
+}

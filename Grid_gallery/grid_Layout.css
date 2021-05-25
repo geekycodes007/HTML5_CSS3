@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.grid-container {
+  height: 100vh;
+  margin: 0 auto;
+  width: 100%;
+  display: grid;
+  gap: 10px 10px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "pic1 pic2 pic2 pic3"
+    "pic1 pic4 pic5 pic6"
+    "pic7 pic7 pic8 pic6"
+    "pic9 pic9 pic8 pic10";
+}
+.Pic1 {
+  grid-area: pic1;
+  background: url("https://source.unsplash.com/user/erondu/1600x900");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic2 {
+  grid-area: pic2;
+  background: url("https://source.unsplash.com/random/1600x900?sig=3");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic3 {
+  grid-area: pic3;
+  background: url("https://source.unsplash.com/random/1600x900?sig=4");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic4 {
+  grid-area: pic4;
+  background: url("https://source.unsplash.com/random/1600x900?sig=5");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic5 {
+  grid-area: pic5;
+  background: url("https://source.unsplash.com/random/1600x900?sig=6");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic6 {
+  grid-area: pic6;
+  background: url("https://source.unsplash.com/random/1600x900?sig=7");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic7 {
+  grid-area: pic7;
+  background: url("https://source.unsplash.com/1600x900/?nature,water");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic8 {
+  grid-area: pic8;
+  background: url("https://source.unsplash.com/random/1600x900?sig=8");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic9 {
+  grid-area: pic9;
+  background: url("https://source.unsplash.com/random/1600x900?sig=9");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.Pic10 {
+  grid-area: pic10;
+  background: url("https://source.unsplash.com/random/1600x900?sig=31");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+@media screen and (max-width: 550px) {
+  .grid-container {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas:
+      "pic1"
+      "pic2"
+      "pic3"
+      "pic4"
+      "pic5"
+      "pic6"
+      "pic7"
+      "pic8"
+      "pic9"
+      "pic10";
+  }
+  .grid-container > div {
+    width: 490px;
+    height: 490px;
+    object-fit: cover;
+    /* display: block; */
+  }
+}
