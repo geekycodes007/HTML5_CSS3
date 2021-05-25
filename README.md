@@ -2,6 +2,8 @@
 
 ---Beginner To Intermediate Projects---
 
+---Designs---
+
 1️⃣ Accordion<br/>
 2️⃣ Modal box<br/>
 3️⃣ Table layout Responsive<br/>  
