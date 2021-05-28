@@ -11,5 +11,5 @@
 5️⃣ Credit card<br/>
 6️⃣ Timer <br/>
 7️⃣ Round Timer <br/>
-8️⃣ Grid gallery<br/>
+8️⃣ Grid gallery Responsive<br/>
 9️⃣ Nav Bar Responsive
