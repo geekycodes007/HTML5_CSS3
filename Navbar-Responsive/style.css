@@ -63,7 +63,9 @@ label.logo {
     text-align: center;
   }
   .nav-bar > ul > li > a:hover {
-    color: black;
+    color: white;
+    display: block;
+    background-color: black;
   }
   #check-me:checked ~ ul {
     position: absolute;
