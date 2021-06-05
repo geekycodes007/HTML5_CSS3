@@ -12,4 +12,5 @@
 6️⃣ Timer <br/>
 7️⃣ Round Timer <br/>
 8️⃣ Grid gallery Responsive<br/>
-9️⃣ Nav Bar Responsive
+9️⃣ Nav Bar Responsive<br/>
+🔟 Resume Templete
