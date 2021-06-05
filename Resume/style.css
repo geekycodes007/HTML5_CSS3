@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Baloo Tammudu 2", cursive;
+  list-style-type: none;
+  text-decoration: none;
+}
+html {
+  line-height: 1.5;
+}
+h1 {
+  font-size: 2rem;
+  color: #f2aa4cff;
+}
+h2 {
+  padding: 0.3rem 0;
+  text-align: left;
+  font-size: 1.25rem;
+  border-top: 2px solid #f2aa4cff;
+  border-bottom: 2px solid grey;
+}
+h3 {
+  font-size: 1rem;
+  color: #f2aa4cff;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  column-gap: 1rem;
+  grid-template-areas:
+    "profile profile education education"
+    "contact contact experience experience"
+    "skills skills projects projects";
+  width: 900px;
+  height: 100vh;
+  margin: 0 auto;
+  background-color: #101820ff;
+  overflow: hidden;
+  padding: 10px;
+}
+.profile {
+  grid-area: profile;
+  text-align: center;
+}
+.profile img {
+  border-radius: 50%;
+}
+.profile p {
+  margin-bottom: 0.5rem;
+  color: #f2aa4cff;
+}
+.about p {
+  margin-top: 10px;
+}
+.contact {
+  grid-area: contact;
+  text-align: left;
+  color: white;
+}
+.contact > ul {
+  /* margin-top: 10px; */
+  padding: 10px;
+}
+.contact > ul > li > a {
+  float: right;
+  color: #f2aa4cff;
+}
+.social-links {
+  margin-top: 6px;
+  padding: 10px;
+}
+.social-links > ul > li > a > i {
+  float: right;
+  color: #f2aa4cff;
+}
+.skills {
+  grid-area: skills;
+  color: white;
+}
+.skills ul {
+  /* margin-top: 10px; */
+  padding: 10px;
+}
+.progress {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 100px;
+  height: 10px;
+  width: 410px;
+}
+
+.progress-value {
+  border-radius: 100px;
+  background-color: #f2aa4cff;
+  height: 8px;
+  width: 50%;
+}
+
+.education {
+  grid-area: education;
+  color: white;
+}
+.education .timeline {
+  border-left: 2px solid #f2aa4cff;
+  height: 420px;
+  padding: 0 10px;
+  margin: 10px 0;
+}
+.education .event::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 963px;
+  background-color: #f2aa4cff;
+  border: 4px solid #f2aa4cff;
+  top: 67px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#line::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 963px;
+  background-color: #f2aa4cff;
+  border: 4px solid #f2aa4cff;
+  top: 210px;
+  border-radius: 50%;
+  z-index: 1;
+}
+#line1::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  left: 963px;
+  background-color: #f2aa4cff;
+  border: 4px solid #f2aa4cff;
+  top: 355px;
+  border-radius: 50%;
+  z-index: 1;
+}
+.experience {
+  grid-area: experience;
+  color: white;
+}
+.experience > ul > li {
+  /* margin-top: 10px; */
+  padding: 10px;
+}
+.projects {
+  grid-area: projects;
+  color: white;
+}
+.projects > ul > li {
+  /* margin-top: 10px; */
+  padding: 10px;
+}
