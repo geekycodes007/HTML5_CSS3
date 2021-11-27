@@ -1,8 +1,7 @@
-### HTML5-CSS3
+### HTML5_CSS3
 
----Beginner To Intermediate Projects---
+:fire:---Beginner Projects---
 
----Designs---
 
 1️⃣ Accordion<br/>
 2️⃣ Modal box<br/>
@@ -13,4 +12,4 @@
 7️⃣ Round Timer <br/>
 8️⃣ Grid gallery Responsive<br/>
 9️⃣ Nav Bar Responsive<br/>
-🔟 Resume Templete
+
